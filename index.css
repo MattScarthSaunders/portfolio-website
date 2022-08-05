@@ -30,12 +30,7 @@ img {
 body {
     background: linear-gradient(to top right, teal, white);
     height: 100vh;
-    width: 100vw;
-}
-main {
-    text-align: center;
-    margin-left: 4rem;
-    margin-right: 4rem;
+    width: 100%;
 }
 
 .navigation {
@@ -57,11 +52,6 @@ main {
     padding-top: 1.65rem;
 }
 
-a {
-    color: inherit;
-    text-decoration: none;
-}
-
 .social{
     display: flex;
     flex-direction: row;
@@ -72,6 +62,13 @@ a {
     margin-bottom: 1rem;
 }
 
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+
 li:hover {
     box-shadow: 0 0 10px 0 white;
 }
@@ -80,11 +77,24 @@ li:active {
     transform: scale(0.9);
 }
 
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+    width: 100%;
+}
+
 #nameTitle {
     margin-top: 5rem;
+    justify-self: center;
+    align-self: center;
 }
 
 #profilePic{
+    justify-self: center;
+    align-self: center;
     border: 1px solid white;
     border-radius: 100%;
     height: 10rem;
@@ -92,4 +102,38 @@ li:active {
     margin-top: 2rem;
     margin-bottom: 2rem;
 }
+
+.pageContent {
+    margin-left: 30%;
+    margin-right: 30%;
+} 
+
+@media screen and (max-width: 576px) {
+    
+    .social {
+        margin-top: 2rem;
+    }
+    
+    #nameTitle {
+        margin-top: 2rem;
+    }
+
+    #nameTitle {
+        margin-left: 4%;
+        margin-right: 4%;
+    }
+    
+    #profilePic{
+        height: 7rem;
+        width: 7rem;
+        margin-left: 4%;
+        margin-right: 4%;
+    }
+
+    .pageContent {
+        margin-left: 4%;
+        margin-right: 4%;
+    }
+}
+
 
