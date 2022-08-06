@@ -29,8 +29,15 @@
     </header>
     <main>
         <h1 id="nameTitle">Contact</h1>
-        <p class="pageContent">Contact Email: m.scarsaund@gmail.com</p>
-
+        <form class ="contact-form" action="https://formspree.io/f/mqkjzjoz" method="POST">
+            <input type="text" name="name" placeholder="Full name" />
+            <input type="text" name="email" placeholder="Your e-mail" />
+            <input type="text" name="subject" placeholder="Subject" />
+            <textarea name="message" placeholder="Message"></textarea>
+            <button type="submit" name="submit" id="submitButton">Send Mail</button>
+        </form>
+        <p class="pageContent">Or, you can email me directly at:</p>
+        <a href="mailto: m.scarsaund@gmail.com" class="contactLink"><p class="pageContent">m.scarsaund@gmail.com</p></a>
     </main>
 </body>
 </html>

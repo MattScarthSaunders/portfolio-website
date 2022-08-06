@@ -78,13 +78,29 @@ a {
     text-decoration: none;
 }
 
+.contactLink {
+    text-decoration: underline;
+}
+
+#submitButton {
+    background-color: white;
+}
+
+.contactLink:hover {
+    text-shadow: 0 0 10px white;
+}
 
 li:hover {
     box-shadow: 0 0 10px 0 white;
 }
 
-li:active {
+.contactLink:active, li:active {
     transform: scale(0.9);
+}
+
+#submitButton:active {
+    color: white;
+    background-color: teal;
 }
 
 main {
@@ -118,6 +134,17 @@ main {
     margin-right: 30%;
 } 
 
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    margin-left: 30%;
+    margin-right: 30%;
+}
+
 @media screen and (max-width: 576px) {
     
     .social {
@@ -143,7 +170,10 @@ main {
     .pageContent {
         margin-left: 4%;
         margin-right: 4%;
+    };
+
+    .contact-form {
+        margin-left: 4%;
+        margin-right: 4%;
     }
 }
-
-
