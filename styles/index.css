@@ -33,6 +33,16 @@ body {
     width: 100%;
 }
 
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+    width: 100%;
+}
+
+/* navigation and links */
 .navigation {
     display: flex;
     flex-direction: row;
@@ -103,14 +113,7 @@ li:hover {
     background-color: teal;
 }
 
-main {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-content: center;
-    text-align: center;
-    width: 100%;
-}
+/* majority page styling */
 
 #nameTitle {
     margin-top: 5rem;
@@ -144,6 +147,8 @@ main {
     margin-left: 30%;
     margin-right: 30%;
 }
+
+/* mobile sizing */
 
 @media screen and (max-width: 576px) {
     
