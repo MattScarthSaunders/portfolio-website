@@ -29,7 +29,9 @@ img {
 
 body {
     background: linear-gradient(to top right, teal, white);
-    height: 100vh;
+    background-attachment: fixed;
+    min-height: 100vh;
+    height: 100%;
     width: 100%;
 }
 
@@ -100,7 +102,7 @@ a {
     text-shadow: 0 0 10px white;
 }
 
-li:hover {
+.social li:hover, .navigation li:hover {
     box-shadow: 0 0 10px 0 white;
 }
 
@@ -116,7 +118,7 @@ li:hover {
 /* majority page styling */
 
 #nameTitle {
-    margin-top: 5rem;
+    margin-top: 2rem;
     justify-self: center;
     align-self: center;
 }
@@ -148,15 +150,50 @@ li:hover {
     margin-right: 30%;
 }
 
+.resumeContainer{
+    margin-top: 2rem;
+    display: flex;
+    text-align: start;
+    margin-left: 15%;
+    margin-right: 15%;
+    background: inherit;
+}
+
+.resumeContainer h2 {
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+}
+
+.resumeContainer h3 {
+    font-weight: bold;
+}
+
+.resumeSection {
+    background-color: rgba(0,0,0,0);
+    padding: 0.5rem;
+    width: 50%;
+}
+
+.resumeItems {
+    margin: 1rem;
+}
+
+.resumeItems li {
+    margin: 0.5rem;
+    list-style: circle;
+}
+
+#codingSection {
+    align-self: center;
+    width: 100%;
+}
+
+
 /* mobile sizing */
 
 @media screen and (max-width: 576px) {
     
     .social {
-        margin-top: 2rem;
-    }
-    
-    #nameTitle {
         margin-top: 2rem;
     }
 
@@ -178,6 +215,11 @@ li:hover {
     };
 
     .contact-form {
+        margin-left: 4%;
+        margin-right: 4%;
+    }
+
+    .resumeContainer {
         margin-left: 4%;
         margin-right: 4%;
     }
