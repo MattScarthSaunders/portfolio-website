@@ -206,10 +206,18 @@ a {
     font-weight: bold;
 }
 
+.resumeContainer h4 {
+    font-style: italic;
+}
+
 .resumeSection {
     background-color: rgba(0,0,0,0);
     padding: 0.5rem;
     width: 50%;
+}
+
+.resumeSection > * {
+    margin: 0.5rem;
 }
 
 .resumeItems {
@@ -226,6 +234,10 @@ a {
     width: 100%;
 }
 
+#codingSection > * {
+    margin: 0.5rem;
+}
+
 /* home */
 
 #profilePic{
@@ -236,6 +248,12 @@ a {
     height: 10rem;
     width: 10rem;
     margin-bottom: 2rem;
+}
+
+#aboutContent {
+    font-size: 1.25rem;
+    margin-left: 20%;
+    margin-right: 20%;
 }
 
 /* Projects */
