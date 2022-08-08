@@ -26,7 +26,7 @@ img {
     height: auto;
 }
 
-/*Main Styling starts here*/
+/*General Styling*/
 
 body {
     background: linear-gradient(to top right, rgba(0, 128, 128, 0.945), rgba(255, 255, 255, 0.918)),
@@ -45,6 +45,26 @@ main {
     text-align: center;
     width: 100%;
 }
+
+#nameTitle {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    justify-self: center;
+    align-self: center;
+    font-weight: bold;
+}
+
+.pageContent {
+    background-color: rgba(255, 255, 255, 0.062);
+    box-shadow: inset 0 0 75px rgba(255, 255, 255, 0.253),
+                inset 2px 2px rgba(168, 166, 166, 0.253),
+                2px 2px rgba(255, 255, 255, 0.253);
+    backdrop-filter: blur(2px);
+    border-radius: 5px;
+    padding: 1rem;
+    margin-left: 30%;
+    margin-right: 30%;
+} 
 
 /* navigation and links */
 .navigation {
@@ -101,6 +121,22 @@ a {
 
 /* Contact form */
 
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    margin-bottom: 2rem;
+    margin-left: 30%;
+    margin-right: 30%;
+    background-color: rgba(255, 255, 255, 0.062);
+    box-shadow: inset 0 0 75px rgba(255, 255, 255, 0.253),
+                inset 2px 2px rgba(168, 166, 166, 0.253),
+                2px 2px rgba(255, 255, 255, 0.253);
+    backdrop-filter: blur(2px);
+    border-radius: 5px;
+}
+
 .contactLink {
     text-decoration: underline;
 }
@@ -128,7 +164,7 @@ a {
     background-color:rgba(255, 255, 255, 0.062);
     box-shadow: inset 0 0 75px rgba(255, 255, 255, 0.253),
                 inset 1px 1px rgba(168, 166, 166, 0.253),
-                1px 1px rgba(255, 255, 255, 0.253);
+                1px 1px rgba(255, 255, 255, 0.336);
     backdrop-filter: blur(1px);
 }
 
@@ -145,53 +181,7 @@ a {
     transform: scale(0.9);
 }
 
-/* majority page styling */
-
-#nameTitle {
-    margin-top: 2rem;
-    margin-bottom: 2rem;
-    justify-self: center;
-    align-self: center;
-    font-weight: bold;
-}
-
-#profilePic{
-    justify-self: center;
-    align-self: center;
-    border: 1px solid white;
-    border-radius: 100%;
-    height: 10rem;
-    width: 10rem;
-    margin-bottom: 2rem;
-}
-
-.pageContent {
-    background-color: rgba(255, 255, 255, 0.062);
-    box-shadow: inset 0 0 75px rgba(255, 255, 255, 0.253),
-                inset 2px 2px rgba(168, 166, 166, 0.253),
-                2px 2px rgba(255, 255, 255, 0.253);
-    backdrop-filter: blur(2px);
-    border-radius: 5px;
-    padding: 1rem;
-    margin-left: 30%;
-    margin-right: 30%;
-} 
-
-.contact-form {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-content: center;
-    margin-bottom: 2rem;
-    margin-left: 30%;
-    margin-right: 30%;
-    background-color: rgba(255, 255, 255, 0.062);
-    box-shadow: inset 0 0 75px rgba(255, 255, 255, 0.253),
-                inset 2px 2px rgba(168, 166, 166, 0.253),
-                2px 2px rgba(255, 255, 255, 0.253);
-    backdrop-filter: blur(2px);
-    border-radius: 5px;
-}
+/* resume */
 
 .resumeContainer{
     display: flex;
@@ -236,6 +226,95 @@ a {
     width: 100%;
 }
 
+/* home */
+
+#profilePic{
+    justify-self: center;
+    align-self: center;
+    border: 1px solid white;
+    border-radius: 100%;
+    height: 10rem;
+    width: 10rem;
+    margin-bottom: 2rem;
+}
+
+/* Projects */
+
+.projectContainer {
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-bottom: 5rem;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+}
+
+.projectImage {
+    object-fit: cover;
+    border: 1px solid white;
+    max-height: 15rem;
+}
+
+.projectContainer p {
+    position: absolute;
+    z-index: 2;
+    color: white;
+    text-shadow: 1px 1px black;
+    max-width: 16rem;
+    min-height: 7rem;
+}
+
+#projectOdd {
+    top: 10rem;
+    right: 0;
+    margin-right: 2rem;
+    min-width: 20rem;
+}
+
+#projectEven {
+    top: 10rem;
+    margin-left: 2rem;
+    min-width: 20rem;
+}
+
+.projectLabelOdd, .projectLabelEven {
+    position: absolute;
+    z-index: 3;
+    top: 16rem;
+    background-color: rgba(255, 255, 255, 0.062);
+    box-shadow: inset 0 0 75px rgba(255, 255, 255, 0.253),
+                inset 2px 2px rgba(168, 166, 166, 0.253),
+                2px 2px rgba(255, 255, 255, 0.253);
+    backdrop-filter: blur(4px);
+    border-radius: 2px;
+    padding: 0.5rem;
+}
+
+.projectLabelOdd li, .projectLabelEven li {
+    list-style: none;
+    display: inline-flex;
+}
+
+.projectLabelOdd {
+    right: 0;
+    margin-right: 3rem;
+}
+
+.projectLabelEven {
+    left: 0;
+    margin-left: 3rem;
+}
+
+.projectLink:hover {
+    text-shadow: 0 0 10px white;
+    cursor: pointer;
+}
+
+.projectLink:active{
+    transform: scale(0.9);
+}
 
 /* mobile sizing */
 
@@ -270,5 +349,20 @@ a {
     .resumeContainer {
         margin-left: 4%;
         margin-right: 4%;
+    }
+
+    .projectContainer {
+        margin-left: 4%;
+        margin-right: 4%;
+    }
+
+    #projectOdd {
+        right: 0;
+        margin-right: 2rem;
+    }
+    
+    #projectEven {
+        left: 0;
+        margin-left: 2rem;
     }
 }
