@@ -166,6 +166,7 @@ a {
                 inset 1px 1px rgba(168, 166, 166, 0.253),
                 1px 1px rgba(255, 255, 255, 0.336);
     backdrop-filter: blur(1px);
+    min-width: 75px;
 }
 
 #submitButton:hover {
