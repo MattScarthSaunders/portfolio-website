@@ -325,6 +325,10 @@ a {
     margin-left: 3rem;
 }
 
+.projectLink {
+    text-decoration: underline;
+}
+
 .projectLink:hover {
     text-shadow: 0 0 10px white;
     cursor: pointer;
