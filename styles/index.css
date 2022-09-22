@@ -271,6 +271,7 @@ a {
 }
 
 .projectImage {
+    width: 100%;
     object-fit: cover;
     border: 1px solid white;
     max-height: 15rem;
