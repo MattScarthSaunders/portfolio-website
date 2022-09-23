@@ -275,6 +275,7 @@ a {
     object-fit: cover;
     border: 1px solid white;
     max-height: 15rem;
+    border-radius: 0.5rem;
 }
 
 .projectContainer p {
