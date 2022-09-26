@@ -25,6 +25,24 @@ img {
     max-width: 100%;
     height: auto;
 }
+/*fading functionality*/
+
+.hidden {
+    opacity: 0;
+    transform: translate(-100px);
+    filter: blur(5px);
+}
+
+.show {
+    opacity: 1;
+    filter: blur(0);
+    transition: all 0.5s;
+    grid-area: 1/1/4/2
+}
+
+.show:nth-child(2) {
+    transition: all 0.5s;
+}
 
 /*General Styling*/
 
@@ -38,10 +56,13 @@ body {
 }
 
 main {
-    display: flex;
+    position: absolute;
+    display: grid;
+    /* grid-template-columns: repeat(1fr,3);
+    grid-template-rows: repeat(1fr, 3);
     flex-direction: column;
     justify-content: center;
-    align-content: center;
+    align-content: center; */
     text-align: center;
     width: 100%;
 }
@@ -49,8 +70,6 @@ main {
 #nameTitle {
     margin-top: 2rem;
     margin-bottom: 2rem;
-    justify-self: center;
-    align-self: center;
     font-weight: bold;
 }
 
@@ -69,7 +88,6 @@ main {
 /* navigation and links */
 .navigation {
     display: flex;
-    flex-direction: row;
     gap: 10px;
     justify-content: center;
     align-content: center;
@@ -91,7 +109,6 @@ main {
 
 .social{
     display: flex;
-    flex-direction: row;
     gap: 10px;
     justify-content: center;
     align-content: center;
